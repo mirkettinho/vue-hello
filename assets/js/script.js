@@ -9,7 +9,7 @@ createApp({
       counter: 0,
       textColor: "",
       color: "ciao",
-      image: "w0tci0oyztfaduazx54s.webp"
+      image: "./assets/img/w0tci0oyztfaduazx54s.webp"
     }
   },
 
@@ -17,20 +17,16 @@ createApp({
     changeColor(){
       if(this.counter < 4)this.counter++
       if(this.counter == 1){
-        this.textColor = "red",
-        this.message = "Red"
+        this.textColor = "red"    
       }
       if(this.counter == 2){
-        this.textColor = "green",
-        this.message = "Verde"
+        this.textColor = "green"      
       }
       if(this.counter == 3){
-        this.textColor = "aqua",
-        this.message = "Aqua"
+        this.textColor = "aqua"
       }
       if(this.counter == 4){
-        this.textColor = "aquamarine",
-        this.message = "Aquamarine"
+        this.textColor = "aquamarine"
       }
     }
   }

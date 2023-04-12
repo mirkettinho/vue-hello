@@ -13,9 +13,40 @@
   <div id="app">
     <h1 :class="textColor">{{message}}</h1>
     <h2>Hai cambiato il colore {{counter}} volte</h2>
-
+    
+    <div>
     <button @click="changeColor">Clicca per cambiare colore</button>
-    <img>{{image}}
+    </div>
+
+
+    <input v-model="message" type="text" placeholder="">
+    <input v-model="textColor" type="text" placeholder="Inserisci il colore">
+    <img :src="image" alt="">
+
+  </div>
+
+
+  
+  <div class="legenda-colori">
+    <ul>
+      <span>i colori disponibili sono:</span>
+      <li>
+        <span>red</span>
+      </li>
+
+      <li>
+        <span>green</span>
+      </li>
+
+      <li>
+        <span>aqua</span>
+      </li>
+
+      <li>
+        <span>aquamarine</span>
+      </li>
+
+    </ul>
   </div>
 
   <script src="assets/js/script.js"></script>
